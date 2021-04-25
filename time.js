@@ -4,22 +4,23 @@ const dateDisplay = document.getElementById('date');
 const yearDisplay = document.getElementById('year')
 
 var time = new Date();
-var day = time.getDay()
+var day = time.getDay() + 1;
 var month = time.getMonth() + 1
 var year = time.getFullYear()
 var date = time.getDate();
 
 var dayName = {
-    1 : 'mon',
-    2: 'Tue',
-    3: 'Wed',
-    4 : 'Thur',
-    5 : 'Fri',
-    6 : 'Sat', 
-    7 : 'Sun'
+    1 : 'Sun',
+    2 : 'mon',
+    3: 'Tue',
+    4: 'Wed',
+    5 : 'Thur',
+    6 : 'Fri',
+    7 : 'Sat' 
 }
 
 dayDisplay.innerHTML = dayName[day];
+console.log(day)
 
 var monthName = {
     1 : 'Jan',

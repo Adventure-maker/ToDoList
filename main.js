@@ -28,8 +28,8 @@ function elementCreation() {
     var checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.addEventListener('change', () => {
-       name.style.textDecoration = 'line-through'
-       checkbox.setAttribute('disabled', true)
+        name.style.textDecoration = 'line-through'
+        checkbox.setAttribute('disabled', true)
     })
 
     var name = document.createElement('p')
@@ -41,6 +41,7 @@ function elementCreation() {
 
     var editBtn = document.createElement('button');
     editBtn.setAttribute('class', 'btn')
+    editBtn.setAttribute('id', 'edit')
 
     var pencil = document.createElement('i');
     pencil.setAttribute('class', 'fa fa-pencil text-success')
