@@ -11,7 +11,7 @@ var date = time.getDate();
 
 var dayName = {
     1 : 'Sun',
-    2 : 'mon',
+    2 : 'Mon',
     3: 'Tue',
     4: 'Wed',
     5 : 'Thur',
