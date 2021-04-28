@@ -61,6 +61,8 @@ function elementCreation() {
     // editing
     editBtn.addEventListener('click', () => {
         input.value = name.value;
+        item.replaceChild(name, input)
+        input.focus()
     })
 
     // deleteing
@@ -88,4 +90,8 @@ function create() {
     }
     input.focus()
     input.value = ""
+}
+
+function replaceTask() {
+
 }
