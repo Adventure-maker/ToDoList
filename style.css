@@ -36,7 +36,7 @@ button {
     justify-content: center;
 }
 
-#timeAndDate {
+#date {
     color: #ccc;
     margin: 6px;
 }
@@ -68,6 +68,7 @@ button {
     justify-content:center;
     color: #fff;
     padding: 5px;
+    font-size: 20px;
 }
 
 input[type="checkbox"] {
