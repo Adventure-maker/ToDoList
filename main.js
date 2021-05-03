@@ -22,8 +22,11 @@ function elementCreation() {
     var checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.addEventListener('change', () => {
-        name.style.textDecoration = 'line-through'
-        checkbox.setAttribute('disabled', true)
+        if (checkbox.checked == true) {
+            name.style.textDecoration = 'line-through'
+        } else {
+            name.style.textDecoration = 'none'
+        }
     })
 
     var name = document.createElement('p')
