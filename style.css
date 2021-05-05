@@ -71,6 +71,11 @@ button {
     color: #fff;
     padding: 5px;
     font-size: 20px;
+    word-wrap: break-word;
+}
+
+p {
+    outline: none;
 }
 
 input[type="checkbox"] {
@@ -79,7 +84,7 @@ input[type="checkbox"] {
 }
 
 .task-name {
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 .add-cont {

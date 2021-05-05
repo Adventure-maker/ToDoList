@@ -24,8 +24,10 @@ function elementCreation() {
     checkbox.addEventListener('change', () => {
         if (checkbox.checked == true) {
             name.style.textDecoration = 'line-through'
+            name.style.color = '#ff96a1'
         } else {
             name.style.textDecoration = 'none'
+            name.style.color = '#fff'
         }
     })
 
@@ -63,8 +65,18 @@ function elementCreation() {
 
     // editing
     editBtn.addEventListener('click', () => {
-        input.value = name.value;
-        input.focus()
+
+        name.setAttribute('contenteditable', true)
+        name.style.color = '#83e89b'
+        name.style.width = '300px'
+        name.focus()
+    })
+
+    window.addEventListener('keydown', e => {
+        if (e.keyCode == 13) {
+            name.removeAttribute('contenteditable', true)
+            name.style.color = '#fff'
+        }
     })
 
     // deleteing
